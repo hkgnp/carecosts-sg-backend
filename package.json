@@ -5,5 +5,9 @@
   "license": "MIT",
   "engines": {
     "node": "14.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
   }
 }
