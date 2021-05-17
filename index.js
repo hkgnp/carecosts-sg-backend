@@ -14,7 +14,7 @@ app.use(cors());
   const db = await MongoUtil.connect(mongoUrl, process.env.DBNAME);
 
   app.get('/', async (req, res) => {
-    let result = await db.collection('baskets').find({});
+    let result = await db.collection('baskets').find({}).toJSON();
     res.status(200);
     res.send(result);
   });
