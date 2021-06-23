@@ -4,7 +4,6 @@ const cors = require('cors');
 require('dotenv').config();
 const mongoUrl = process.env.MONGO_URL;
 const MongoUtil = require('./MongoUtil');
-// const ObjectId = require('mongodb').ObjectId;
 
 const app = express();
 
